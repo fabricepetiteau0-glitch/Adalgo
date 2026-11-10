@@ -24,6 +24,11 @@ export const estPositif = (n) => {
  */
 export const estPair = (n) => {
   // à compléter
+if (n % 2 === 0 ) {
+  return true
+} else {
+  return false
+}
 }
 
 /**
