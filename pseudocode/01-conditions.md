@@ -27,10 +27,28 @@ INIT
 
 START
     DEBUT FUNCTION estPair (n) :
-        SI n MODULO2 === 0 ALORS
+        SI n MODULO(2) === 0 ALORS
             RETURN Vrai
     FIN SI
         RETURN FAUX
+    FIN FUNCTION
+FIN
+```
+## retourneGrand
+
+```text
+VARIABLE
+    a :number
+    b :number
+INIT
+    LIRE a , b
+
+START
+    DEBUT FUNCTION MAX (a, b) :
+        SI a > b ALORS
+            RETURN a
+        FIN SI
+        RETURN b
     FIN FUNCTION
 FIN
 ```

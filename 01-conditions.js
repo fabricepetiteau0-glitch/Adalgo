@@ -9,12 +9,12 @@
  * @example estPositif(5) → true / estPositif(-3) → false
  */
 export const estPositif = (n) => {
-  if (n >= 0 ) {
-    return true
-  } else { 
-    return false
+  if (n >= 0) {
+    return true;
+  } else {
+    return false;
   }
-}
+};
 
 /**
  * Retourne true si n est pair.
@@ -23,13 +23,12 @@ export const estPositif = (n) => {
  * @example estPair(4) → true / estPair(7) → false
  */
 export const estPair = (n) => {
-  // à compléter
-if (n % 2 === 0 ) {
-  return true
-} else {
-  return false
-}
-}
+  if (n % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+};
 
 /**
  * Retourne le plus grand des deux nombres. Sans Math.max().
@@ -40,7 +39,11 @@ if (n % 2 === 0 ) {
  */
 export const max = (a, b) => {
   // à compléter
-}
+  if (a > b) {
+    return a;
+  }
+    return b;
+};
 
 /**
  * Retourne la mention correspondant à la note.
@@ -52,7 +55,7 @@ export const max = (a, b) => {
  */
 export const mention = (note) => {
   // à compléter
-}
+};
 
 /**
  * [FACULTATIF]
@@ -64,4 +67,4 @@ export const mention = (note) => {
  */
 export const fizzbuzz = (n) => {
   // à compléter
-}
+};
