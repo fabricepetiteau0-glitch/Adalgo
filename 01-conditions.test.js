@@ -44,6 +44,31 @@ describe("max", () => {
 // Même pattern que max — écris les tests pour chaque mention.
 // Cas à couvrir : une note dans chaque tranche, et la valeur frontière 16.
 describe("mention", () => {
+  it("retourne le plus grand note >= 16", () => {
+    expect(
+      mention(16)
+    ).toBe("Très bien")
+  })
+  it("retourne le grand note >= 14", () => {
+    expect(
+      mention(14)
+    ).toBe("Bien")
+  })
+  it("retourne le plus grand note >= 12", () => {
+    expect(
+      mention(12)
+    ).toBe("Assez bien")
+  })
+  it("retourne le plus grand note >= 10", () => { 
+    expect(
+      mention(10)
+    ).toBe("Passable")
+    })
+  it("retourne le plus petit note < 10", () => {
+    expect(
+      mention(9)
+    ).toBe("Insuffisant")
+  })
   // à compléter
 })
 

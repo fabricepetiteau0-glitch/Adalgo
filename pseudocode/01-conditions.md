@@ -48,7 +48,34 @@ START
         SI a > b ALORS
             RETURN a
         FIN SI
-        RETURN b
+        RETURN 
+    FIN FUNCTION
+FIN
+```
+## retourneMention
+
+```text
+VARIABLE
+    note : number
+    mention: string
+
+INIT
+    LIRE note
+
+START
+    DEBUT FUNCTION mention (note) :
+        SI note >= 16 ALORS
+            RETURN "Très bien"
+         SINON SI note >= 14 ALORS
+            RETURN "Bien"
+         SINON SI note >= 12 ALORS
+            RETURN "Assez bien"
+        SINON SI note >= 10 ALORS
+            RETURN "Passable"
+        SINON 
+            RETURN "Insuffisant"
+        FIN SI
+        RETURN 
     FIN FUNCTION
 FIN
 ```
