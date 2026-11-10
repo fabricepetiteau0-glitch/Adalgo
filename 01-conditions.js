@@ -9,7 +9,11 @@
  * @example estPositif(5) → true / estPositif(-3) → false
  */
 export const estPositif = (n) => {
-  // à compléter
+  if (n >= 0 ) {
+    return true
+  } else { 
+    return false
+  }
 }
 
 /**
