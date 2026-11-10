@@ -8,7 +8,9 @@
  * @example compterJusqua(5) → affiche 1, 2, 3, 4, 5
  */
 export const compterJusqua = (n) => {
-  // à compléter
+  for (let i = 1; i <= 5; i++) {
+    console.log(i)
+  }
 }
 
 /**
@@ -19,6 +21,12 @@ export const compterJusqua = (n) => {
  */
 export const afficherPairs = (n) => {
   // à compléter
+  for (let i = 2; i <=8; i++) {
+    if(i % 2 == 0) {
+      console.log(i)
+    }
+
+  }
 }
 
 /**
