@@ -59,3 +59,60 @@ DEBUT
 
 FIN 
 ```
+## 5 Compter pairs
+
+```text
+VARIABLES
+    i = Entier
+    n = number
+    compteur = Entier
+DEBUT
+    compteur <= 0
+
+    POUR i DE 1 A n
+        SI i MODULO (2) = 0 ALORS
+            compteur <= compteur + 1
+        FIN SI
+    FIN POUR
+    RETURN compteur
+
+FIN 
+```
+## 6 boucle et tableau
+
+```text
+VARIABLES
+    i = Entier
+    n = number
+    resultat = Tableau
+DEBUT
+    resultat <= []
+
+    POUR i DE 1 A n
+        AJOUTER n * i resultat
+            
+    FIN POUR
+    RETURN resultat
+
+FIN 
+```
+## 7 tableau et multiple
+
+```text
+VARIABLES
+    i = Entier
+    n = number
+    limite = number
+    resultat = Tableau
+DEBUT
+    resultat <= []
+    i <= n
+    TANT QUE i <= limite
+        AJOUTER i A resultat
+        i <= i + n
+            
+    FIN TANT QUE
+    RETURN resultat
+
+FIN 
+```

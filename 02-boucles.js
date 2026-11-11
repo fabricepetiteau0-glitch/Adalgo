@@ -72,6 +72,13 @@ export const produit = (n) => {
  */
 export const compterPairs = (n) => {
   // à compléter
+    let compteur = 0
+    for(let i = 1; i <= n; i++) {
+      if (i % 2 === 0) {
+          compteur = compteur + 1
+      }
+    }
+    return compteur
 }
 
 /**
@@ -84,6 +91,11 @@ export const compterPairs = (n) => {
  */
 export const table = (n) => {
   // à compléter
+    const resultat = []
+    for (let i = 1; i <= n; i++) {
+      resultat.push(n * i)
+    }
+    return resultat
 }
 
 /**
@@ -97,6 +109,14 @@ export const table = (n) => {
  */
 export const multiplesJusqua = (n, limite) => {
   // à compléter
+    const resultat = []
+    let i = n
+
+    while (i <= limite) {
+      resultat.push(i)
+      i = i + n
+    }
+    return resultat
 }
 
 /**

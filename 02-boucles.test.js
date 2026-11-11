@@ -11,7 +11,6 @@ describe("compterJusqua", () => {
 // Même pattern que compterJusqua — à toi.
 // Cas à couvrir : s'exécute sans erreur pour n=8, s'exécute sans erreur pour n=0.
 describe("afficherPairs", () => {
-  // à compléter
   it("s'exécute sans erreur pour n=8", () => {
     expect(() => afficherPairs(8)).not.toThrow()
   })
@@ -37,7 +36,6 @@ describe("somme", () => {
 // Même pattern que somme — à toi.
 // Cas à couvrir : produit(5) → 120, produit(1) → 1, produit(0) → 1.
 describe("produit", () => {
-  // à compléter
   it("retourne 120 pour n=5", () => {
       expect(produit(5)).toBe(120)
   })
@@ -53,6 +51,15 @@ describe("produit", () => {
 // Cas à couvrir : compterPairs(10) → 5, compterPairs(7) → 3, compterPairs(1) → 0.
 describe("compterPairs", () => {
   // à compléter
+  it("retourne 5 pour n=10", () => {
+      expect(compterPairs(10)).toBe(5)
+  })
+  it("retourne 3 pour n=7", () => {
+      expect(compterPairs(7)).toBe(3)
+  })
+  it("retourne 0 pour n=1", () => {
+      expect(compterPairs(1)).toBe(0)
+  })
 })
 
 // Pattern 3 : boucle + construction de tableau → .toEqual() sur un tableau.
@@ -73,6 +80,12 @@ describe("table", () => {
 // Cas à couvrir : multiplesJusqua(3, 12) → [3, 6, 9, 12], multiplesJusqua(7, 20) → [7, 14].
 describe("multiplesJusqua", () => {
   // à compléter
+  it("retourne les multiples de 3 jusqu'a 12", () => {
+      expect(multiplesJusqua(3, 12)).toEqual([3, 6, 9, 12])
+  })
+  it("retourne les multiples de 7 jusqu'a 20", () => {
+      expect(multiplesJusqua(7, 20)).toEqual([7, 14])
+  })
 })
 
 // [FACULTATIF] Même pattern que somme/produit — à toi.
