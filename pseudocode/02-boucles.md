@@ -20,9 +20,8 @@ VARIABLES
 DEBUT
     POUR i DE 1 A n
         SI i modulo(2) = 0 ALORS
-    AFFICHER
+    AFFICHER i
     FIN SI
-
 
 FIN POUR
 ```

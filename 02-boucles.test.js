@@ -12,6 +12,9 @@ describe("compterJusqua", () => {
 // Cas à couvrir : s'exécute sans erreur pour n=8, s'exécute sans erreur pour n=0.
 describe("afficherPairs", () => {
   // à compléter
+  it("s'exécute sans erreur pour n=8", () => {
+    expect(() => afficherPairs(8)).not.toThrow()
+  })
 })
 
 // Pattern 2 : boucle + accumulateur numérique → .toBe() sur un nombre.
