@@ -42,3 +42,20 @@ DEBUT
 
 FIN 
 ```
+## 4 Retourne le produit
+
+```text
+VARIABLES
+    i = Entier
+    n = number
+    produit = Entier
+DEBUT
+    produit <= 1
+
+    POUR i DE 1 A n
+        produit <= produit * i
+    FIN POUR
+    RETURN produit
+
+FIN 
+```
