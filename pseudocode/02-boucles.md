@@ -1,6 +1,6 @@
 # Boucles
 
-## Afficher les nombres
+## 1 Afficher les nombres
 
 ```text
 VARIABLES
@@ -11,7 +11,7 @@ AFFICHER i
  
 FIN POUR
 ```
-## Afficher les nombres pairs
+## 2 Afficher les nombres pairs
 
 ```text
 VARIABLES
@@ -24,4 +24,21 @@ DEBUT
     FIN SI
 
 FIN POUR
+```
+## 3 Retourne la somme
+
+```text
+VARIABLES
+    i= Entier
+    n= number
+    somme= Entier
+DEBUT
+    somme <= 0
+
+    POUR i DE 1 A n
+        somme <= somme + i
+    FIN POUR
+    RETURN somme
+
+FIN 
 ```

@@ -15,6 +15,9 @@ describe("afficherPairs", () => {
   it("s'exécute sans erreur pour n=8", () => {
     expect(() => afficherPairs(8)).not.toThrow()
   })
+  it("s'exécute sans erreur pour n=0", () => {
+    expect(() => afficherPairs(0)).not.toThrow()
+  })
 })
 
 // Pattern 2 : boucle + accumulateur numérique → .toBe() sur un nombre.
