@@ -7,6 +7,7 @@ describe("maximum", () => {
   it("retourne le maximum", () => {
     expect(maximum([3, 7, 2, 9, 1])).toBe(9)
   })
+  
   it("fonctionne avec un seul élément", () => {
     expect(maximum([5])).toBe(5)
   })
@@ -18,7 +19,17 @@ describe("maximum", () => {
 // Même pattern qu'maximum — à toi.
 // Cas à couvrir : cas normal, négatifs.
 describe("minimum", () => {
-  // à compléter
+  // à compléter 
+  it("retourne le minimum", () => {
+    expect(minimum([3, 7, 2, 9, 1])).toBe(1)
+  })
+  
+  it("fonctionne avec un seul élément", () => {
+    expect(minimum([5])).toBe(5)
+  })
+  it("fonctionne avec des négatifs", () => {
+    expect(minimum([-3, -1, -7])).toBe(-7)
+  })
 })
 
 // Nouveau cas : retourner null. On te montre moyenne en entier.

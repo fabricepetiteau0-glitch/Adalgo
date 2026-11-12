@@ -10,6 +10,12 @@
  */
 export const maximum = (tableau) => {
   // à compléter
+    let plusGrand = tableau [0]
+    tableau.forEach((nombre) => { 
+      if (plusGrand < nombre) 
+        plusGrand = nombre
+})
+  return plusGrand
 }
 
 /**
@@ -20,6 +26,12 @@ export const maximum = (tableau) => {
  */
 export const minimum = (tableau) => {
   // à compléter
+    let plusPetite = tableau [0]
+    tableau.forEach((nombre) => {
+      if (plusPetite > nombre)
+        plusPetite = nombre
+    })
+    return plusPetite
 }
 
 /**
