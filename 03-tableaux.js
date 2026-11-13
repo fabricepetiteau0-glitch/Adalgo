@@ -42,8 +42,7 @@ export const minimum = (tableau) => {
  */
 export const moyenne = (tableau) => {
   // à compléter
-    if (tableau.length === 0) {
-      
+    if (tableau.length === 0) {  
     return null
     }
     let somme = 0
@@ -51,7 +50,6 @@ export const moyenne = (tableau) => {
       somme = somme + element
     })
     const resultat = somme / tableau.length
-
     return resultat
 }
 
@@ -65,6 +63,12 @@ export const moyenne = (tableau) => {
  */
 export const contient = (tableau, valeur) => {
   // à compléter
+    for(const element of tableau) {
+      if (element === valeur) {
+        return true
+      }
+    }
+    return false
 }
 
 /**

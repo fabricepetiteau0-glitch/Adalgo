@@ -59,5 +59,22 @@ DEBUT
 
     return moyenne        
 FIN 
+```
+## 4 Retourne true si la valeur est présente dans le tableau, false sinon
+
+```text
+VARIABLES
+    tab  = tableau de nombre
+    valeur  = valeur recherché
+DEBUT
+        
+    POUR CHAQUE element DANS tab FAIRE
+    SI element = valeur ALORS
+        return true
+    FIN SI
+FIN POUR
+        return false
+      
+FIN 
 
 

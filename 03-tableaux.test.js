@@ -48,7 +48,16 @@ describe("moyenne", () => {
 // Même pattern — à toi.
 // Cas à couvrir : valeur présente, valeur absente, tableau vide.
 describe("contient", () => {
-  // à compléter
+  // à compléter 
+  it("retourne true si la valeur est présente", () => {
+    expect(contient([1, 2, 3],2)).toBe(true)
+  })
+  it("retourne false si la valeur est absente", () => {
+    expect(contient([1, 2, 3],5)).toBe(false)
+  })
+  it("retourne false pour un tableau vide", () => {
+    expect(contient([],5)).toBe(false)
+  })
 })
 
 // Même pattern — à toi.
