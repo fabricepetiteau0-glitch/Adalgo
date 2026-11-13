@@ -69,12 +69,29 @@ VARIABLES
 DEBUT
         
     POUR CHAQUE element DANS tab FAIRE
-    SI element = valeur ALORS
-        return true
-    FIN SI
+        SI element = valeur ALORS
+            return true
+        FIN SI
 FIN POUR
-        return false
+return false
       
 FIN 
-
-
+```
+## 5 Retourne le nombre de fois que la valeur apparaît dans le tableau.
+```text
+VARIABLES
+    tab  = tableau de nombre
+    valeur  = valeur recherché
+    compteur = Entier
+DEBUT
+    compteur <= 0   
+    POUR CHAQUE element DANS tab FAIRE
+        SI element = valeur ALORS
+            compteur <= compteur + 1
+        
+        FIN SI
+    FIN POUR
+    return compteur
+      
+FIN 
+```

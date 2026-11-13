@@ -63,7 +63,14 @@ describe("contient", () => {
 // Même pattern — à toi.
 // Cas à couvrir : plusieurs occurrences, valeur absente (retourne 0).
 describe("compter", () => {
-  // à compléter
+  // à compléter 
+  it("retourne plusieurs occurences", () => {
+    expect(compter([1, 2, 2, 3, 2],2)).toBe(3)
+  })
+  it("retourne 0 si la valeur est absente", () => {
+    expect(compter([1, 2, 3],5)).toBe(0)
+  })
+  
 })
 
 // [FACULTATIF] Nouveau cas : vérifier que le tableau original n'est pas modifié.

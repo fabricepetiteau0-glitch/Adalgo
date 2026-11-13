@@ -80,6 +80,13 @@ export const contient = (tableau, valeur) => {
  */
 export const compter = (tableau, valeur) => {
   // à compléter
+  let compteur = 0
+  for(const element of tableau) {
+    if (element === valeur) {
+      compteur = compteur + 1
+    }
+  }
+  return compteur
 }
 
 /**
