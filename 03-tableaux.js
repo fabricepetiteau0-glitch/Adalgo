@@ -42,6 +42,17 @@ export const minimum = (tableau) => {
  */
 export const moyenne = (tableau) => {
   // à compléter
+    if (tableau.length === 0) {
+      
+    return null
+    }
+    let somme = 0
+    tableau.forEach((element) => {
+      somme = somme + element
+    })
+    const resultat = somme / tableau.length
+
+    return resultat
 }
 
 /**

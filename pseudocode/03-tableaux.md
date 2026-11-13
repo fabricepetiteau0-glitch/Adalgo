@@ -37,24 +37,26 @@ DEBUT
     FIN POUR
     return plusPetite        
 FIN 
-
+```
 ## 3 Retourne la moyenne des valeurs
 
 ```text
 VARIABLES
-    tableau  = tableau de nombre
+    tab  = tableau de nombre
+    somme = Entier
     moyenne  = Entier
 DEBUT
-
-    moyenne <= tab [0]
-    POUR CHAQUE element DANS tableau FAIRE
         
-        SI moyenne <  element ALORS
+    SI longueur (tab) = 0 ALORS
+        return null
+    FIN SI
 
-            moyenne <= nombre
-
-        FIN SI
+    somme <= 0
+    POUR CHAQUE element DANS tab FAIRE
+        somme <= somme + element
     FIN POUR
+        somme / longueur (tab)
+
     return moyenne        
 FIN 
 
